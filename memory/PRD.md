@@ -30,6 +30,7 @@ Pixel-perfect clone of a German law firm website (ICMN & Partner), built with Re
 - [x] AGB page (/agb) - full German terms & conditions
 - [x] Footer links connected to legal pages via React Router
 - [x] All links verified working (Feb 19, 2026)
+- [x] DSGVO cookie consent banner (localStorage persistence, slide-up animation)
 
 ## Backlog
 - P1: Backend integration (FastAPI + MongoDB) for dynamic content
