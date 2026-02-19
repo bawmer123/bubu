@@ -114,7 +114,7 @@ export const rechtsgebiete = [
 export const stats = [
   { value: '228+', label: 'Mandanten' },
   { value: '45%', label: 'Erfolgsquote' },
-  { value: '9+', label: 'Jahre Erfahrung' }
+  { value: '6+', label: 'Jahre Erfahrung' }
 ];
 
 export const features = [
