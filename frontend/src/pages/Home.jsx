@@ -220,7 +220,7 @@ const Home = () => {
 
           {/* Mobile Menu */}
           {mobileMenuOpen && (
-            <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg border-t border-gray-200 py-4">
+            <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg border-t border-gray-200 py-4 z-50">
               <div className="flex flex-col space-y-4 px-4">
                 <a
                   href="#hero"
