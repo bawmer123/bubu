@@ -144,11 +144,17 @@ const Home = () => {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <a href="#hero" onClick={(e) => handleNavClick(e, 'hero')} className="flex items-center gap-3">
-              <img 
-                src="https://customer-assets.emergentagent.com/job_web-overhaul-19/artifacts/13jzxqcy_file.png" 
-                alt="ICMN Logo" 
-                className="h-12 w-12 object-contain"
-              />
+              <div className={`h-12 w-12 rounded-lg flex items-center justify-center transition-all duration-300 ${
+                scrolled ? 'bg-[#0f172a]' : 'bg-white'
+              }`}>
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_web-overhaul-19/artifacts/13jzxqcy_file.png" 
+                  alt="ICMN Logo" 
+                  className={`h-10 w-10 object-contain transition-all duration-300 ${
+                    scrolled ? '' : 'brightness-0 invert'
+                  }`}
+                />
+              </div>
               <span className={`text-2xl font-serif font-bold transition-colors duration-300 ${
                 scrolled ? 'text-[#0f172a]' : 'text-white'
               }`}>
