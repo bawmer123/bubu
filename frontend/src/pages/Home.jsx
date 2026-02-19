@@ -38,6 +38,8 @@ const iconMap = {
 const Home = () => {
   const [typedText, setTypedText] = useState('');
   const [showBackToTop, setShowBackToTop] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -87,10 +89,11 @@ const Home = () => {
     };
   }, []);
 
-  // Back to top button visibility
+  // Back to top button visibility and nav scroll effect
   useEffect(() => {
     const handleScroll = () => {
       setShowBackToTop(window.scrollY > 500);
+      setScrolled(window.scrollY > 50);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -118,8 +121,148 @@ const Home = () => {
     });
   };
 
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
+  const handleNavClick = (e, targetId) => {
+    e.preventDefault();
+    setMobileMenuOpen(false);
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <div className="bg-white min-h-screen">
+      {/* Navigation Header */}
+      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled ? 'bg-white shadow-lg py-4' : 'bg-transparent py-6'
+      }`}>
+        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between">
+            {/* Logo */}
+            <a href="#hero" onClick={(e) => handleNavClick(e, 'hero')} className="flex items-center">
+              <span className={`text-2xl font-serif font-bold transition-colors duration-300 ${
+                scrolled ? 'text-[#0f172a]' : 'text-white'
+              }`}>
+                ICMN <span className="text-[#d4a446]">&amp; Partner</span>
+              </span>
+            </a>
+
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex items-center space-x-8">
+              <a
+                href="#hero"
+                onClick={(e) => handleNavClick(e, 'hero')}
+                className={`font-medium transition-colors duration-300 hover:text-[#d4a446] ${
+                  scrolled ? 'text-gray-700' : 'text-white'
+                }`}
+              >
+                Home
+              </a>
+              <a
+                href="#leistungen"
+                onClick={(e) => handleNavClick(e, 'leistungen')}
+                className={`font-medium transition-colors duration-300 hover:text-[#d4a446] ${
+                  scrolled ? 'text-gray-700' : 'text-white'
+                }`}
+              >
+                Leistungen
+              </a>
+              <a
+                href="#ueber-uns"
+                onClick={(e) => handleNavClick(e, 'ueber-uns')}
+                className={`font-medium transition-colors duration-300 hover:text-[#d4a446] ${
+                  scrolled ? 'text-gray-700' : 'text-white'
+                }`}
+              >
+                Über uns
+              </a>
+              <a
+                href="#team"
+                onClick={(e) => handleNavClick(e, 'team')}
+                className={`font-medium transition-colors duration-300 hover:text-[#d4a446] ${
+                  scrolled ? 'text-gray-700' : 'text-white'
+                }`}
+              >
+                Team
+              </a>
+              <a
+                href="#kontakt"
+                onClick={(e) => handleNavClick(e, 'kontakt')}
+                className="px-6 py-2 bg-[#d4a446] text-[#0f172a] font-semibold rounded-lg hover:bg-[#e0b558] transition-all duration-300"
+              >
+                Kontakt
+              </a>
+            </div>
+
+            {/* Mobile Menu Button */}
+            <button
+              onClick={toggleMobileMenu}
+              className={`md:hidden p-2 rounded-lg transition-colors duration-300 ${
+                scrolled ? 'text-[#0f172a]' : 'text-white'
+              }`}
+              aria-label="Toggle menu"
+            >
+              {mobileMenuOpen ? (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              ) : (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              )}
+            </button>
+          </div>
+
+          {/* Mobile Menu */}
+          {mobileMenuOpen && (
+            <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg border-t border-gray-200 py-4">
+              <div className="flex flex-col space-y-4 px-4">
+                <a
+                  href="#hero"
+                  onClick={(e) => handleNavClick(e, 'hero')}
+                  className="text-gray-700 font-medium hover:text-[#d4a446] transition-colors py-2"
+                >
+                  Home
+                </a>
+                <a
+                  href="#leistungen"
+                  onClick={(e) => handleNavClick(e, 'leistungen')}
+                  className="text-gray-700 font-medium hover:text-[#d4a446] transition-colors py-2"
+                >
+                  Leistungen
+                </a>
+                <a
+                  href="#ueber-uns"
+                  onClick={(e) => handleNavClick(e, 'ueber-uns')}
+                  className="text-gray-700 font-medium hover:text-[#d4a446] transition-colors py-2"
+                >
+                  Über uns
+                </a>
+                <a
+                  href="#team"
+                  onClick={(e) => handleNavClick(e, 'team')}
+                  className="text-gray-700 font-medium hover:text-[#d4a446] transition-colors py-2"
+                >
+                  Team
+                </a>
+                <a
+                  href="#kontakt"
+                  onClick={(e) => handleNavClick(e, 'kontakt')}
+                  className="px-6 py-2 bg-[#d4a446] text-[#0f172a] font-semibold rounded-lg hover:bg-[#e0b558] transition-all duration-300 text-center"
+                >
+                  Kontakt
+                </a>
+              </div>
+            </div>
+          )}
+        </nav>
+      </header>
+
       {/* Hero Section */}
       <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div
@@ -159,13 +302,15 @@ const Home = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-fadeInUp" style={{ animationDelay: '0.8s' }}>
             <a
               href="#kontakt"
-              className="px-8 py-4 bg-[#d4a446] text-[#0f172a] font-bold rounded-lg hover:bg-[#e0b558] transition-all duration-300 shadow-lg shadow-[#d4a446]/30 hover:shadow-[#d4a446]/50 text-lg"
+              onClick={(e) => handleNavClick(e, 'kontakt')}
+              className="px-8 py-4 bg-[#d4a446] text-[#0f172a] font-bold rounded-lg hover:bg-[#e0b558] transition-all duration-300 shadow-lg shadow-[#d4a446]/30 hover:shadow-[#d4a446]/50 text-lg cursor-pointer"
             >
               Kostenlose Erstberatung
             </a>
             <a
               href="#leistungen"
-              className="px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-lg hover:border-[#d4a446] hover:text-[#d4a446] transition-all duration-300 text-lg"
+              onClick={(e) => handleNavClick(e, 'leistungen')}
+              className="px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-lg hover:border-[#d4a446] hover:text-[#d4a446] transition-all duration-300 text-lg cursor-pointer"
             >
               Unsere Leistungen
             </a>
@@ -182,7 +327,7 @@ const Home = () => {
         </div>
 
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <a href="#leistungen">
+          <a href="#leistungen" onClick={(e) => handleNavClick(e, 'leistungen')} className="cursor-pointer">
             <ChevronDown className="text-[#d4a446] w-8 h-8" />
           </a>
         </div>
