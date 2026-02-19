@@ -53,7 +53,7 @@ const Home = () => {
 
   // Typing animation
   useEffect(() => {
-    const text = 'Ihr Rechtsanwalt in Berlin';
+    const text = 'Ihr Rechtsanwalt in München';
     let index = 0;
     const timer = setInterval(() => {
       if (index <= text.length) {
