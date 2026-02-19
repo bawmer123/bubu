@@ -385,7 +385,10 @@ const Home = () => {
                     {service.title}
                   </h3>
                   <p className="text-gray-600 leading-relaxed text-sm mb-6">{service.description}</p>
-                  <button className="flex items-center gap-2 text-[#d4a446] font-semibold text-sm group/link hover:gap-3 transition-all duration-300">
+                  <button 
+                    onClick={(e) => handleServiceClick(e, service.value)}
+                    className="flex items-center gap-2 text-[#d4a446] font-semibold text-sm group/link hover:gap-3 transition-all duration-300 cursor-pointer"
+                  >
                     <span>Mehr erfahren</span>
                     <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
                   </button>
