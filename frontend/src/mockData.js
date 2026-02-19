@@ -96,7 +96,7 @@ export const contactInfo = [
 
 export const rechtsgebiete = [
   { value: '', label: 'Bitte wählen...' },
-  { value: 'arabisches-recht', label: 'Arabisches Recht' },
+  { value: 'immobilienrecht', label: 'Immobilienrecht' },
   { value: 'verwaltungsrecht', label: 'Verwaltungsrecht' },
   { value: 'wirtschaftsrecht', label: 'Wirtschaftsrecht' },
   { value: 'arbeitsrecht', label: 'Arbeitsrecht' },
