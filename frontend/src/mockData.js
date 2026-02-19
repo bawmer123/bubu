@@ -78,7 +78,7 @@ export const contactInfo = [
     id: 1,
     icon: 'MapPin',
     title: 'Adresse',
-    lines: ['Kurfürstendamm 123', '10711 Berlin, Deutschland']
+    lines: ['Maximilianstraße 123', '80539 München, Deutschland']
   },
   {
     id: 2,
