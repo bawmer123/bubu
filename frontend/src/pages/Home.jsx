@@ -143,7 +143,12 @@ const Home = () => {
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <a href="#hero" onClick={(e) => handleNavClick(e, 'hero')} className="flex items-center">
+            <a href="#hero" onClick={(e) => handleNavClick(e, 'hero')} className="flex items-center gap-3">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_web-overhaul-19/artifacts/13jzxqcy_file.png" 
+                alt="ICMN Logo" 
+                className="h-12 w-12 object-contain"
+              />
               <span className={`text-2xl font-serif font-bold transition-colors duration-300 ${
                 scrolled ? 'text-[#0f172a]' : 'text-white'
               }`}>
