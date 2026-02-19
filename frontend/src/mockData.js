@@ -113,7 +113,7 @@ export const stats = [
 
 export const features = [
   'Über 18 Jahre Berufserfahrung',
-  'Spezialisierung auf internationales Recht',
+  'Spezialisierung auf Immobilienrecht',
   'Mehrsprachiges Anwaltsteam',
   'Persönliche und individuelle Beratung',
   'Hohe Erfolgsquote vor Gericht',
