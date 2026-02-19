@@ -303,7 +303,7 @@ const Home = () => {
 
         <div className="relative z-10 max-w-5xl mx-auto px-4 text-center mt-16">
           <div className="inline-block px-5 py-2 border border-[#d4a446]/40 rounded-full mb-8 animate-fadeInUp">
-            <span className="text-[#d4a446] text-sm font-medium tracking-widest uppercase">⚖️ Seit 2005 an Ihrer Seite</span>
+            <span className="text-[#d4a446] text-sm font-medium tracking-widest uppercase">⚖️ Seit 2018 an Ihrer Seite</span>
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-serif font-bold text-white leading-tight mb-6 animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
