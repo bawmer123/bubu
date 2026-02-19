@@ -148,7 +148,7 @@ const Home = () => {
                 scrolled ? 'bg-[#0f172a]' : 'bg-white'
               }`}>
                 <img 
-                  src="https://customer-assets.emergentagent.com/job_web-overhaul-19/artifacts/13jzxqcy_file.png" 
+                  src="/icmn-logo.png" 
                   alt="ICMN Logo" 
                   className={`h-10 w-10 object-contain transition-all duration-300 ${
                     scrolled ? '' : 'brightness-0 invert'
