@@ -841,15 +841,15 @@ const Home = () => {
                 © {new Date().getFullYear()} ICMN &amp; Partner. Alle Rechte vorbehalten.
               </p>
               <div className="flex gap-6">
-                <a href="#" className="text-gray-400 hover:text-[#d4a446] text-sm transition-colors">
+                <Link to="/impressum" className="text-gray-400 hover:text-[#d4a446] text-sm transition-colors" data-testid="footer-impressum-link">
                   Impressum
-                </a>
-                <a href="#" className="text-gray-400 hover:text-[#d4a446] text-sm transition-colors">
+                </Link>
+                <Link to="/datenschutz" className="text-gray-400 hover:text-[#d4a446] text-sm transition-colors" data-testid="footer-datenschutz-link">
                   Datenschutz
-                </a>
-                <a href="#" className="text-gray-400 hover:text-[#d4a446] text-sm transition-colors">
+                </Link>
+                <Link to="/agb" className="text-gray-400 hover:text-[#d4a446] text-sm transition-colors" data-testid="footer-agb-link">
                   AGB
-                </a>
+                </Link>
               </div>
             </div>
           </div>
