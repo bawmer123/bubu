@@ -134,6 +134,17 @@ const Home = () => {
     }
   };
 
+  const handleServiceClick = (e, serviceValue) => {
+    e.preventDefault();
+    // Update form data with selected service
+    setFormData({ ...formData, rechtsgebiet: serviceValue });
+    // Scroll to contact section
+    const contactSection = document.getElementById('kontakt');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <div className="bg-white min-h-screen">
       {/* Navigation Header */}
