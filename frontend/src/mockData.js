@@ -1,0 +1,121 @@
+export const services = [
+  {
+    id: 1,
+    icon: 'Scale',
+    title: 'Arabisches Recht',
+    description: 'Spezialisierte Beratung im arabischen Rechtsraum mit tiefem Verständnis kultureller und rechtlicher Besonderheiten.',
+    delay: 0
+  },
+  {
+    id: 2,
+    icon: 'Landmark',
+    title: 'Verwaltungsrecht',
+    description: 'Vertretung gegenüber Behörden, Widerspruchsverfahren und verwaltungsgerichtliche Klagen mit hoher Erfolgsquote.',
+    delay: 100
+  },
+  {
+    id: 3,
+    icon: 'Building2',
+    title: 'Wirtschaftsrecht',
+    description: 'Umfassende Beratung in Handels-, Gesellschafts- und Wettbewerbsrecht für Unternehmen jeder Größe.',
+    delay: 200
+  },
+  {
+    id: 4,
+    icon: 'Briefcase',
+    title: 'Arbeitsrecht',
+    description: 'Kompetente Vertretung bei Kündigungsschutz, Abfindungen und arbeitsvertraglichen Streitigkeiten.',
+    delay: 300
+  },
+  {
+    id: 5,
+    icon: 'Shield',
+    title: 'Strafrecht',
+    description: 'Engagierte Strafverteidigung in allen Instanzen – von der Ermittlung bis zur Hauptverhandlung.',
+    delay: 400
+  },
+  {
+    id: 6,
+    icon: 'Users',
+    title: 'Familienrecht',
+    description: 'Einfühlsame Beratung bei Scheidung, Sorgerecht, Unterhalt und familienrechtlichen Vereinbarungen.',
+    delay: 500
+  }
+];
+
+export const teamMembers = [
+  {
+    id: 1,
+    name: 'Dr. Karim Nassar',
+    position: 'Gründer & Senior Partner',
+    specialization: 'Arabisches Recht · Wirtschaftsrecht',
+    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500&q=80'
+  },
+  {
+    id: 2,
+    name: 'RA Sarah Al-Rashid',
+    position: 'Partnerin',
+    specialization: 'Verwaltungsrecht · Familienrecht',
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&q=80'
+  },
+  {
+    id: 3,
+    name: 'RA Michael Weber',
+    position: 'Assoziierter Partner',
+    specialization: 'Strafrecht · Arbeitsrecht',
+    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=500&q=80'
+  }
+];
+
+export const contactInfo = [
+  {
+    id: 1,
+    icon: 'MapPin',
+    title: 'Adresse',
+    lines: ['Kurfürstendamm 123', '10711 Berlin, Deutschland']
+  },
+  {
+    id: 2,
+    icon: 'Phone',
+    title: 'Telefon',
+    lines: ['+49 (0) 30 1234 5678', '+49 (0) 170 987 6543']
+  },
+  {
+    id: 3,
+    icon: 'Mail',
+    title: 'E-Mail',
+    lines: ['info@icmn-rechtsanwaelte.de', 'beratung@icmn-rechtsanwaelte.de']
+  },
+  {
+    id: 4,
+    icon: 'Clock',
+    title: 'Öffnungszeiten',
+    lines: ['Mo – Fr: 09:00 – 18:00', 'Sa: nach Vereinbarung']
+  }
+];
+
+export const rechtsgebiete = [
+  { value: '', label: 'Bitte wählen...' },
+  { value: 'arabisches-recht', label: 'Arabisches Recht' },
+  { value: 'verwaltungsrecht', label: 'Verwaltungsrecht' },
+  { value: 'wirtschaftsrecht', label: 'Wirtschaftsrecht' },
+  { value: 'arbeitsrecht', label: 'Arbeitsrecht' },
+  { value: 'strafrecht', label: 'Strafrecht' },
+  { value: 'familienrecht', label: 'Familienrecht' },
+  { value: 'sonstiges', label: 'Sonstiges' }
+];
+
+export const stats = [
+  { value: '228+', label: 'Mandanten' },
+  { value: '45%', label: 'Erfolgsquote' },
+  { value: '9+', label: 'Jahre Erfahrung' }
+];
+
+export const features = [
+  'Über 18 Jahre Berufserfahrung',
+  'Spezialisierung auf internationales Recht',
+  'Mehrsprachiges Anwaltsteam',
+  'Persönliche und individuelle Beratung',
+  'Hohe Erfolgsquote vor Gericht',
+  'Transparente Kostenstruktur'
+];
