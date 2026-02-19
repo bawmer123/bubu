@@ -4,42 +4,48 @@ export const services = [
     icon: 'Scale',
     title: 'Immobilienrecht',
     description: 'Umfassende Beratung bei Immobilienkauf, Mietrecht, Baurecht und Eigentumsfragen mit fundierter Expertise.',
-    delay: 0
+    delay: 0,
+    value: 'immobilienrecht'
   },
   {
     id: 2,
     icon: 'Landmark',
     title: 'Verwaltungsrecht',
     description: 'Vertretung gegenüber Behörden, Widerspruchsverfahren und verwaltungsgerichtliche Klagen mit hoher Erfolgsquote.',
-    delay: 100
+    delay: 100,
+    value: 'verwaltungsrecht'
   },
   {
     id: 3,
     icon: 'Building2',
     title: 'Wirtschaftsrecht',
     description: 'Umfassende Beratung in Handels-, Gesellschafts- und Wettbewerbsrecht für Unternehmen jeder Größe.',
-    delay: 200
+    delay: 200,
+    value: 'wirtschaftsrecht'
   },
   {
     id: 4,
     icon: 'Briefcase',
     title: 'Arbeitsrecht',
     description: 'Kompetente Vertretung bei Kündigungsschutz, Abfindungen und arbeitsvertraglichen Streitigkeiten.',
-    delay: 300
+    delay: 300,
+    value: 'arbeitsrecht'
   },
   {
     id: 5,
     icon: 'Shield',
     title: 'Strafrecht',
     description: 'Engagierte Strafverteidigung in allen Instanzen – von der Ermittlung bis zur Hauptverhandlung.',
-    delay: 400
+    delay: 400,
+    value: 'strafrecht'
   },
   {
     id: 6,
     icon: 'Users',
     title: 'Familienrecht',
     description: 'Einfühlsame Beratung bei Scheidung, Sorgerecht, Unterhalt und familienrechtlichen Vereinbarungen.',
-    delay: 500
+    delay: 500,
+    value: 'familienrecht'
   }
 ];
 
