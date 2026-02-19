@@ -118,7 +118,7 @@ export const stats = [
 ];
 
 export const features = [
-  'Über 18 Jahre Berufserfahrung',
+  'Über 6 Jahre Berufserfahrung',
   'Spezialisierung auf Immobilienrecht',
   'Mehrsprachiges Anwaltsteam',
   'Persönliche und individuelle Beratung',
