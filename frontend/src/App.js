@@ -6,11 +6,13 @@ import ServiceDetail from './pages/ServiceDetail';
 import Impressum from './pages/Impressum';
 import Datenschutz from './pages/Datenschutz';
 import AGB from './pages/AGB';
+import CookieConsent from './components/CookieConsent';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <CookieConsent />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/service/:service" element={<ServiceDetail />} />
