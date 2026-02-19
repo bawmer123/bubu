@@ -2,8 +2,8 @@ export const services = [
   {
     id: 1,
     icon: 'Scale',
-    title: 'Arabisches Recht',
-    description: 'Spezialisierte Beratung im arabischen Rechtsraum mit tiefem Verständnis kultureller und rechtlicher Besonderheiten.',
+    title: 'Immobilienrecht',
+    description: 'Umfassende Beratung bei Immobilienkauf, Mietrecht, Baurecht und Eigentumsfragen mit fundierter Expertise.',
     delay: 0
   },
   {
