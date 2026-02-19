@@ -537,18 +537,20 @@ const Home = () => {
                   <p className="text-[#d4a446] text-sm font-medium mb-2">{member.position}</p>
                   <p className="text-gray-400 text-sm text-center mb-6">{member.specialization}</p>
                   <div className="flex gap-3">
-                    <a
-                      href="#"
+                    <button
+                      onClick={(e) => handleNavClick(e, 'kontakt')}
                       className="w-10 h-10 bg-white/10 hover:bg-[#d4a446] rounded-full flex items-center justify-center transition-all duration-300 group/icon"
+                      aria-label="Contact via LinkedIn"
                     >
                       <Linkedin className="w-5 h-5 text-white group-hover/icon:text-[#0f172a]" />
-                    </a>
-                    <a
-                      href="#"
+                    </button>
+                    <button
+                      onClick={(e) => handleNavClick(e, 'kontakt')}
                       className="w-10 h-10 bg-white/10 hover:bg-[#d4a446] rounded-full flex items-center justify-center transition-all duration-300 group/icon"
+                      aria-label="Send email"
                     >
                       <Mail className="w-5 h-5 text-white group-hover/icon:text-[#0f172a]" />
-                    </a>
+                    </button>
                   </div>
                 </div>
               </div>
