@@ -33,7 +33,7 @@ export default function Impressum() {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-5 h-5 text-[#d4a446]" />
-                <a href="mailto:info@icmn-rechtsanwaelte.de" className="text-[#d4a446] hover:underline">info@icmn-rechtsanwaelte.de</a>
+                <a href="mailto:T.tsiklauri@icmn.de" className="text-[#d4a446] hover:underline">T.tsiklauri@icmn.de</a>
               </div>
             </div>
 

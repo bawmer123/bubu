@@ -90,7 +90,7 @@ export const contactInfo = [
     id: 3,
     icon: 'Mail',
     title: 'E-Mail',
-    lines: ['info@icmn-rechtsanwaelte.de', 'beratung@icmn-rechtsanwaelte.de']
+    lines: ['T.tsiklauri@icmn.de']
   },
   {
     id: 4,

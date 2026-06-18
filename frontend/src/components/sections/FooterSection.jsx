@@ -98,7 +98,7 @@ export function FooterSection({ onNavClick }) {
               <li className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-[#d4a446] flex-shrink-0 mt-0.5" />
                 <div className="text-gray-400 text-sm">
-                  <div>info@icmn-rechtsanwaelte.de</div>
+                  <div>T.tsiklauri@icmn.de</div>
                 </div>
               </li>
               <li className="flex items-start gap-3">
