@@ -56,20 +56,6 @@ export const teamMembers = [
     position: 'Gründer & Senior Partner',
     specialization: 'Immobilienrecht · Wirtschaftsrecht',
     image: '/karim-nassar.jpeg'
-  },
-  {
-    id: 2,
-    name: 'RA Sarah Al-Rashid',
-    position: 'Partnerin',
-    specialization: 'Verwaltungsrecht · Familienrecht',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&q=80'
-  },
-  {
-    id: 3,
-    name: 'RA Michael Weber',
-    position: 'Assoziierter Partner',
-    specialization: 'Strafrecht · Arbeitsrecht',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=500&q=80'
   }
 ];
 
