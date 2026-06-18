@@ -2,13 +2,15 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Shield } from 'lucide-react';
 
-const CookieConsent = () => {
+const CONSENT_DELAY_MS = 800;
+
+export default function CookieConsent() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     const consent = localStorage.getItem('cookie_consent');
     if (!consent) {
-      const timer = setTimeout(() => setVisible(true), 800);
+      const timer = setTimeout(() => setVisible(true), CONSENT_DELAY_MS);
       return () => clearTimeout(timer);
     }
   }, []);
@@ -21,10 +23,7 @@ const CookieConsent = () => {
   if (!visible) return null;
 
   return (
-    <div
-      data-testid="cookie-consent-banner"
-      className="fixed bottom-0 left-0 right-0 z-[100] animate-slideUp"
-    >
+    <div data-testid="cookie-consent-banner" className="fixed bottom-0 left-0 right-0 z-[100] animate-slideUp">
       <div className="bg-[#0f172a]/95 backdrop-blur-xl border-t border-[#d4a446]/20 shadow-2xl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-5">
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
@@ -58,6 +57,4 @@ const CookieConsent = () => {
       </div>
     </div>
   );
-};
-
-export default CookieConsent;
+}
