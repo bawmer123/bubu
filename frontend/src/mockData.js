@@ -55,7 +55,7 @@ export const teamMembers = [
     name: 'Dr. Karim Nassar',
     position: 'Gründer & Senior Partner',
     specialization: 'Immobilienrecht · Wirtschaftsrecht',
-    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500&q=80'
+    image: '/karim-nassar.jpeg'
   },
   {
     id: 2,
