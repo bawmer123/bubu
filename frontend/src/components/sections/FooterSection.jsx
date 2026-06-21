@@ -30,7 +30,7 @@ export function FooterSection({ onNavClick }) {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="mailto:T.tsiklauri@icmn.de"
                 className="w-10 h-10 bg-white/10 hover:bg-[#d4a446] rounded-lg flex items-center justify-center transition-all duration-300"
                 aria-label="Email"
               >

@@ -56,13 +56,13 @@ export function TeamSection({ onNavClick }) {
                   >
                     <Linkedin className="w-5 h-5 text-white group-hover/icon:text-[#0f172a]" />
                   </a>
-                  <button
-                    onClick={(e) => onNavClick(e, 'kontakt')}
+                  <a
+                    href="mailto:T.tsiklauri@icmn.de"
                     className="w-10 h-10 bg-white/10 hover:bg-[#d4a446] rounded-full flex items-center justify-center transition-all duration-300 group/icon"
                     aria-label="Send email"
                   >
                     <Mail className="w-5 h-5 text-white group-hover/icon:text-[#0f172a]" />
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
