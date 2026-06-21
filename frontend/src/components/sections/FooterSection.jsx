@@ -21,7 +21,9 @@ export function FooterSection({ onNavClick }) {
             </p>
             <div className="flex gap-3">
               <a
-                href="#"
+                href="https://www.linkedin.com/in/tea-tsiklauri-r%C3%A9gal-58084477/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 hover:bg-[#d4a446] rounded-lg flex items-center justify-center transition-all duration-300"
                 aria-label="LinkedIn"
               >
