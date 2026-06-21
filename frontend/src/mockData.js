@@ -55,7 +55,8 @@ export const teamMembers = [
     name: 'Dr. Tea Tsiklauri-Régal',
     position: 'Gründer & Senior Partner',
     specialization: 'Immobilienrecht · Wirtschaftsrecht',
-    image: '/karim-nassar.png'
+    image: '/karim-nassar.png',
+    linkedin: 'https://www.linkedin.com/in/tea-tsiklauri-r%C3%A9gal-58084477/'
   }
 ];
 

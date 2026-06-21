@@ -47,13 +47,15 @@ export function TeamSection({ onNavClick }) {
                 <p className="text-[#d4a446] text-sm font-medium mb-2">{member.position}</p>
                 <p className="text-gray-400 text-sm text-center mb-6">{member.specialization}</p>
                 <div className="flex gap-3">
-                  <button
-                    onClick={(e) => onNavClick(e, 'kontakt')}
+                  <a
+                    href={member.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-10 h-10 bg-white/10 hover:bg-[#d4a446] rounded-full flex items-center justify-center transition-all duration-300 group/icon"
-                    aria-label="Contact via LinkedIn"
+                    aria-label="LinkedIn"
                   >
                     <Linkedin className="w-5 h-5 text-white group-hover/icon:text-[#0f172a]" />
-                  </button>
+                  </a>
                   <button
                     onClick={(e) => onNavClick(e, 'kontakt')}
                     className="w-10 h-10 bg-white/10 hover:bg-[#d4a446] rounded-full flex items-center justify-center transition-all duration-300 group/icon"
