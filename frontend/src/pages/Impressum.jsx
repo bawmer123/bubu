@@ -39,7 +39,7 @@ export default function Impressum() {
 
             <h2 className="text-2xl font-serif font-bold text-[#0f172a] mt-8 mb-4">Vertretungsberechtigte</h2>
             <p className="text-gray-700 mb-4">
-              Dr. Karim Nassar, Rechtsanwalt<br />
+              Dr. Tea Tsiklauri-Régal, Rechtsanwältin<br />
               RA Sarah Al-Rashid, Rechtsanwältin<br />
               RA Michael Weber, Rechtsanwalt
             </p>

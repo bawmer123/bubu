@@ -52,7 +52,7 @@ export const services = [
 export const teamMembers = [
   {
     id: 1,
-    name: 'Dr. Karim Nassar',
+    name: 'Dr. Tea Tsiklauri-Régal',
     position: 'Gründer & Senior Partner',
     specialization: 'Immobilienrecht · Wirtschaftsrecht',
     image: '/karim-nassar.png'
