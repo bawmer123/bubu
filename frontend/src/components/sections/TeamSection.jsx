@@ -20,10 +20,11 @@ export function TeamSection({ onNavClick }) {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {teamMembers.map((member) => (
+          {teamMembers.map((member, idx) => (
             <div
               key={member.id}
               className="reveal team-card group relative rounded-2xl overflow-hidden shadow-xl cursor-pointer"
+              style={{ transitionDelay: `${idx * 150}ms` }}
               data-testid={`team-member-${member.id}`}
             >
               <div className="aspect-[3/4] overflow-hidden">

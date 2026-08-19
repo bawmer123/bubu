@@ -22,12 +22,13 @@ export function ContactSection({ formData, onFormChange, onSubmit }) {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {contactInfo.map((info) => {
+          {contactInfo.map((info, idx) => {
             const IconComponent = iconMap[info.icon];
             return (
               <div
                 key={info.id}
                 className="reveal bg-gray-50 rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-[#d4a446]/30 group"
+                style={{ transitionDelay: `${idx * 100}ms` }}
                 data-testid={`contact-info-${info.id}`}
               >
                 <div className="w-14 h-14 bg-[#0f172a]/5 group-hover:bg-[#d4a446]/10 rounded-2xl flex items-center justify-center mx-auto mb-4 transition-colors duration-300">

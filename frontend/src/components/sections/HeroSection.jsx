@@ -21,24 +21,24 @@ export function HeroSection({ typedText, onNavClick }) {
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#d4a446]/3 rounded-full blur-3xl" />
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 text-center mt-16">
-        <div className="inline-block px-5 py-2 border border-[#d4a446]/40 rounded-full mb-8 animate-fadeInUp">
+        <div className="inline-block px-5 py-2 border border-[#d4a446]/40 rounded-full mb-8 animate-slideInLeft" style={{ animationDelay: '0.1s' }}>
           <span className="text-[#d4a446] text-sm font-medium tracking-widest uppercase">Seit 2013 an Ihrer Seite</span>
         </div>
 
         <h1
-          className="text-4xl sm:text-5xl md:text-7xl font-serif font-bold text-white leading-tight mb-6 animate-fadeInUp text-3d-block"
-          style={{ animationDelay: '0.2s' }}
+          className="text-4xl sm:text-5xl md:text-7xl font-serif font-bold text-white leading-tight mb-6 animate-slideInLeft text-3d-block"
+          style={{ animationDelay: '0.25s' }}
         >
           ICMN <span className="text-[#d4a446] text-3d-block-gold">&amp; Partner</span>
         </h1>
 
-        <div className="h-16 sm:h-20 flex items-center justify-center mb-8 animate-fadeInUp" style={{ animationDelay: '0.4s' }}>
+        <div className="h-16 sm:h-20 flex items-center justify-center mb-8 animate-slideInRight" style={{ animationDelay: '0.45s' }}>
           <p className="text-xl sm:text-2xl md:text-3xl text-gray-300 font-light">
             {typedText}<span className="text-[#d4a446] ml-0.5 animate-blink">|</span>
           </p>
         </div>
 
-        <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-10 animate-fadeInUp" style={{ animationDelay: '0.6s' }}>
+        <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-10 animate-slideInRight" style={{ animationDelay: '0.65s' }}>
           Ihr strategischer Partner für steuerliche, betriebswirtschaftliche und administrative Herausforderungen. Wir verbinden fachliche Expertise mit persönlicher Beratung und präzisen Lösungen für unseren Mandanten.
         </p>
 
