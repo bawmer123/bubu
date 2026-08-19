@@ -38,14 +38,6 @@ export const services = [
     description: 'Engagierte Strafverteidigung in allen Instanzen – von der Ermittlung bis zur Hauptverhandlung.',
     delay: 400,
     value: 'strafrecht'
-  },
-  {
-    id: 6,
-    icon: 'Users',
-    title: 'Familienrecht',
-    description: 'Einfühlsame Beratung bei Scheidung, Sorgerecht, Unterhalt und familienrechtlichen Vereinbarungen.',
-    delay: 500,
-    value: 'familienrecht'
   }
 ];
 
@@ -94,7 +86,6 @@ export const rechtsgebiete = [
   { value: 'wirtschaftsrecht', label: 'Wirtschaftsrecht' },
   { value: 'arbeitsrecht', label: 'Arbeitsrecht' },
   { value: 'strafrecht', label: 'Strafrecht' },
-  { value: 'familienrecht', label: 'Familienrecht' },
   { value: 'sonstiges', label: 'Sonstiges' }
 ];
 

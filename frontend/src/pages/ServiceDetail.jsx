@@ -112,25 +112,6 @@ const serviceDetails = {
       { title: 'Revision', content: 'Überprüfung von Urteilen und Einlegung von Rechtsmitteln zur Korrektur von Fehlurteilen.' },
     ],
   },
-  familienrecht: {
-    icon: 'Users',
-    title: 'Familienrecht',
-    subtitle: 'Einfühlsame Beratung in schwierigen Zeiten',
-    description: 'Wir begleiten Sie durch alle familienrechtlichen Angelegenheiten mit Empathie und juristischer Kompetenz.',
-    features: [
-      'Scheidung und Trennungsvereinbarungen',
-      'Sorgerecht und Umgangsrecht',
-      'Unterhalt (Kindes-, Ehe-, Elternunterhalt)',
-      'Zugewinnausgleich und Vermögensaufteilung',
-      'Eheverträge und Scheidungsfolgenvereinbarungen',
-      'Adoption und Vaterschaftsfeststellung',
-    ],
-    details: [
-      { title: 'Scheidung', content: 'Beratung und Vertretung im Scheidungsverfahren mit Klärung aller Folgesachen wie Unterhalt und Vermögensaufteilung.' },
-      { title: 'Sorgerecht', content: 'Durchsetzung Ihrer Rechte beim Sorgerecht, Umgangsrecht und Aufenthaltsbestimmungsrecht.' },
-      { title: 'Unterhalt', content: 'Berechnung und Durchsetzung von Unterhaltsansprüchen oder Abwehr überhöhter Forderungen.' },
-    ],
-  },
 };
 
 export default function ServiceDetail() {
