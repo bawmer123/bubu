@@ -57,6 +57,39 @@ const Home = () => {
     return () => observer.disconnect();
   }, []);
 
+  // Scroll-driven parallax layers
+  useEffect(() => {
+    const layers = Array.from(document.querySelectorAll('[data-parallax]'));
+    if (!layers.length) return undefined;
+
+    let ticking = false;
+    const update = () => {
+      const winH = window.innerHeight;
+      layers.forEach((el) => {
+        const speed = parseFloat(el.getAttribute('data-parallax')) || 0;
+        const rect = el.parentElement.getBoundingClientRect();
+        const progress = rect.top + rect.height / 2 - winH / 2;
+        el.style.transform = `translate3d(0, ${(-progress * speed).toFixed(1)}px, 0)`;
+      });
+      ticking = false;
+    };
+    const onScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(update);
+        ticking = true;
+      }
+    };
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    update();
+
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+    };
+  }, []);
+
   // Back to top button visibility and nav scroll effect
   useEffect(() => {
     const handleScroll = () => {

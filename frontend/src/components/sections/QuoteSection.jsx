@@ -5,12 +5,14 @@ export function QuoteSection() {
   return (
     <section className="relative py-32 overflow-hidden">
       <div
-        className="absolute inset-0 parallax-bg"
+        className="absolute left-0 right-0 parallax-bg"
+        data-parallax="0.2"
         style={{
+          top: '-40%',
+          height: '180%',
           backgroundImage: 'url("https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1920&q=80")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          backgroundAttachment: 'fixed',
         }}
       />
       <div className="absolute inset-0 bg-[#0f172a]/85" />

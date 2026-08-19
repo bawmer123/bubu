@@ -6,19 +6,21 @@ export function HeroSection({ typedText, onNavClick }) {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div
-        className="absolute inset-0 parallax-bg"
+        className="absolute left-0 right-0 parallax-bg"
+        data-parallax="0.18"
         style={{
+          top: '-30%',
+          height: '160%',
           backgroundImage: 'url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          backgroundAttachment: 'fixed',
         }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-[#0f172a]/90 via-[#0f172a]/80 to-[#0f172a]/95" />
 
       {/* Decorative blurs */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-[#d4a446]/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#d4a446]/3 rounded-full blur-3xl" />
+      <div className="absolute top-20 left-10 w-72 h-72 bg-[#d4a446]/5 rounded-full blur-3xl parallax-bg" data-parallax="0.35" />
+      <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#d4a446]/3 rounded-full blur-3xl parallax-bg" data-parallax="-0.25" />
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 text-center mt-16">
         <div className="inline-block px-5 py-2 border border-[#d4a446]/40 rounded-full mb-8 animate-slideInLeft" style={{ animationDelay: '0.1s' }}>
