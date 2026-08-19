@@ -69,7 +69,7 @@ export const contactInfo = [
     id: 3,
     icon: 'Mail',
     title: 'E-Mail',
-    lines: ['T.tsiklauri@icmn.de']
+    lines: ['info@icmn.de']
   },
   {
     id: 4,

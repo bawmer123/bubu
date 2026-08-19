@@ -32,7 +32,7 @@ export default function Datenschutz() {
               <strong>ICMN &amp; Partner Rechtsanwälte</strong><br />
               Orleansstraße 21<br />
               81667 München<br />
-              E-Mail: T.tsiklauri@icmn.de<br />
+              E-Mail: info@icmn.de<br />
               Telefon: +49 (0) 30 1234 5678
             </p>
 
