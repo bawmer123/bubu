@@ -18,10 +18,18 @@ export function NavHeader({ scrolled, mobileMenuOpen, onToggleMobileMenu, onNavC
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <a href="#hero" onClick={(e) => onNavClick(e, 'hero')} className="flex items-center gap-3">
-            <div className={`h-12 w-12 rounded-lg flex items-center justify-center transition-all duration-300 ${
-              scrolled ? 'bg-[#0f172a]/5' : 'bg-white'
-            }`} style={{ perspective: '600px' }}>
-              <img src="/icmn-logo.png" alt="ICMN Logo" className="h-10 w-10 object-contain logo-spin-3d" />
+            <div className="coin-scene h-12 w-12 flex items-center justify-center">
+              <div className="coin-3d">
+                {[...Array(9)].map((_, i) => (
+                  <span key={i} className="coin-edge" style={{ transform: `translateZ(${(i - 4) * 1.15}px)` }} />
+                ))}
+                <div className="coin-face coin-front">
+                  <img src="/icmn-logo.png" alt="ICMN Logo" className="h-8 w-8 object-contain" />
+                </div>
+                <div className="coin-face coin-back">
+                  <img src="/icmn-logo.png" alt="ICMN Logo" className="h-8 w-8 object-contain" />
+                </div>
+              </div>
             </div>
             <span className={`text-2xl font-serif font-bold transition-colors duration-300 ${
               scrolled ? 'text-[#0f172a]' : 'text-white'

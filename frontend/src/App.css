@@ -48,17 +48,53 @@
   animation: slideUp 0.4s ease-out forwards;
 }
 
-@keyframes logoSpin3d {
-  from {
-    transform: rotateY(0deg);
+/* 3D coin logo */
+.coin-scene {
+  perspective: 900px;
+}
+
+.coin-3d {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  transform-style: preserve-3d;
+  animation: coinFlip 4s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+  will-change: transform;
+  filter: drop-shadow(0 8px 6px rgba(15, 23, 42, 0.35));
+}
+
+@keyframes coinFlip {
+  0% {
+    transform: rotateX(-14deg) rotateY(0deg);
   }
-  to {
-    transform: rotateY(360deg);
+  100% {
+    transform: rotateX(-14deg) rotateY(360deg);
   }
 }
 
-.logo-spin-3d {
-  animation: logoSpin3d 3.5s linear infinite;
-  transform-style: preserve-3d;
-  will-change: transform;
+.coin-edge {
+  position: absolute;
+  inset: 0;
+  border-radius: 0.6rem;
+  background: linear-gradient(180deg, #f3d488 0%, #d4a446 40%, #a9781f 100%);
+}
+
+.coin-face {
+  position: absolute;
+  inset: 0;
+  border-radius: 0.6rem;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  box-shadow: 0 0 0 2.5px #d4a446 inset;
+}
+
+.coin-front {
+  transform: translateZ(5px);
+}
+
+.coin-back {
+  transform: translateZ(-5px) rotateY(180deg);
 }
