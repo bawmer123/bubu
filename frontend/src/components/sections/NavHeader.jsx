@@ -20,8 +20,8 @@ export function NavHeader({ scrolled, mobileMenuOpen, onToggleMobileMenu, onNavC
           <a href="#hero" onClick={(e) => onNavClick(e, 'hero')} className="flex items-center gap-3">
             <div className={`h-12 w-12 rounded-lg flex items-center justify-center transition-all duration-300 ${
               scrolled ? 'bg-[#0f172a]/5' : 'bg-white'
-            }`}>
-              <img src="/icmn-logo.png" alt="ICMN Logo" className="h-10 w-10 object-contain" />
+            }`} style={{ perspective: '600px' }}>
+              <img src="/icmn-logo.png" alt="ICMN Logo" className="h-10 w-10 object-contain logo-spin-3d" />
             </div>
             <span className={`text-2xl font-serif font-bold transition-colors duration-300 ${
               scrolled ? 'text-[#0f172a]' : 'text-white'

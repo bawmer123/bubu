@@ -47,3 +47,18 @@
 .animate-slideUp {
   animation: slideUp 0.4s ease-out forwards;
 }
+
+@keyframes logoSpin3d {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.logo-spin-3d {
+  animation: logoSpin3d 3.5s linear infinite;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
