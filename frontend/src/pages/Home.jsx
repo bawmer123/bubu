@@ -9,7 +9,7 @@ import { TeamSection } from '../components/sections/TeamSection';
 import { ContactSection } from '../components/sections/ContactSection';
 import { FooterSection } from '../components/sections/FooterSection';
 
-const HERO_TEXT = 'Ihr Rechtsanwalt in München';
+const HERO_TEXT = 'Exzellenz in Recht, Steuern und Verwaltung';
 
 const Home = () => {
   const [typedText, setTypedText] = useState('');
