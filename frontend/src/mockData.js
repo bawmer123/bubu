@@ -57,7 +57,7 @@ export const contactInfo = [
     id: 1,
     icon: 'MapPin',
     title: 'Adresse',
-    lines: ['Maximilianstraße 123', '80539 München, Deutschland']
+    lines: ['Orleansstraße 21', '81667 München, Deutschland']
   },
   {
     id: 2,

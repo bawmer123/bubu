@@ -20,8 +20,8 @@ export default function Impressum() {
             <h2 className="text-2xl font-serif font-bold text-[#0f172a] mt-8 mb-4">Angaben gemäß § 5 TMG</h2>
             <p className="text-gray-700 mb-4">
               <strong>ICMN &amp; Partner Rechtsanwälte</strong><br />
-              Maximilianstraße 123<br />
-              80539 München<br />
+              Orleansstraße 21<br />
+              81667 München<br />
               Deutschland
             </p>
 

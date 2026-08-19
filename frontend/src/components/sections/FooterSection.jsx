@@ -87,8 +87,8 @@ export function FooterSection({ onNavClick }) {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-[#d4a446] flex-shrink-0 mt-0.5" />
                 <div className="text-gray-400 text-sm">
-                  <div>Maximilianstraße 123</div>
-                  <div>80539 München</div>
+                  <div>Orleansstraße 21</div>
+                  <div>81667 München</div>
                 </div>
               </li>
               <li className="flex items-start gap-3">

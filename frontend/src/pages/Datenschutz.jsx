@@ -30,8 +30,8 @@ export default function Datenschutz() {
             <p className="text-gray-700 mb-4">Verantwortlicher für die Datenverarbeitung auf dieser Website ist:</p>
             <p className="text-gray-700 mb-6">
               <strong>ICMN &amp; Partner Rechtsanwälte</strong><br />
-              Maximilianstraße 123<br />
-              80539 München<br />
+              Orleansstraße 21<br />
+              81667 München<br />
               E-Mail: T.tsiklauri@icmn.de<br />
               Telefon: +49 (0) 30 1234 5678
             </p>
