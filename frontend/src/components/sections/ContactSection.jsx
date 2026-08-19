@@ -37,7 +37,13 @@ export function ContactSection({ formData, onFormChange, onSubmit }) {
                 <h4 className="font-serif font-bold text-[#0f172a] mb-2">{info.title}</h4>
                 {info.lines.map((line) => (
                   <p key={line} className="text-gray-600 text-sm">
-                    {line}
+                    {line.includes('@') ? (
+                      <a href={`mailto:${line}`} className="hover:text-[#d4a446] transition-colors" data-testid="contact-info-email-link">
+                        {line}
+                      </a>
+                    ) : (
+                      line
+                    )}
                   </p>
                 ))}
               </div>

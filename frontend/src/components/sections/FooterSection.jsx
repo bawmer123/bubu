@@ -100,7 +100,7 @@ export function FooterSection({ onNavClick }) {
               <li className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-[#d4a446] flex-shrink-0 mt-0.5" />
                 <div className="text-gray-400 text-sm">
-                  <div>info@icmn.de</div>
+                  <a href="mailto:info@icmn.de" className="hover:text-[#d4a446] transition-colors" data-testid="footer-email-link">info@icmn.de</a>
                 </div>
               </li>
               <li className="flex items-start gap-3">
