@@ -39,7 +39,7 @@ export function HeroSection({ typedText, onNavClick }) {
         </div>
 
         <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-10 animate-fadeInUp" style={{ animationDelay: '0.6s' }}>
-          Professionelle Rechtsberatung in allen Bereichen des nationalen und internationalen Rechts. Wir setzen Ihre Interessen durch.
+          Ihr strategischer Partner für steuerliche, betriebswirtschaftliche und administrative Herausforderungen. Wir verbinden fachliche Expertise mit persönlicher Beratung und präzisen Lösungen für unseren Mandanten.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-fadeInUp" style={{ animationDelay: '0.8s' }}>
