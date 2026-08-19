@@ -36,7 +36,7 @@ export function AboutSection() {
               Ihre Kanzlei für <span className="text-[#d4a446]">erstklassige Rechtsberatung</span>
             </h2>
             <p className="text-gray-600 leading-relaxed mb-6 text-lg">
-              ICMN &amp; Partner steht für kompetente, engagierte und mandantenorientierte Rechtsberatung. Seit unserer Gründung im Jahr 2018 haben wir uns als eine der führenden Kanzleien im Bereich des Immobilienrechts etabliert.
+              ICMN &amp; Partner steht für kompetente, engagierte und mandantenorientierte Rechtsberatung. Seit unserer Gründung im Jahr 2013 haben wir uns als eine der führenden Kanzleien im Bereich des Immobilienrechts etabliert.
             </p>
             <p className="text-gray-600 leading-relaxed mb-8">
               Unser mehrsprachiges Team aus erfahrenen Rechtsanwälten berät und vertritt Mandanten aus dem In- und Ausland in sämtlichen Rechtsfragen. Dabei stehen Vertrauen, Diskretion und Erfolg im Mittelpunkt unserer Arbeit.

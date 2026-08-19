@@ -17,7 +17,7 @@ export function FooterSection({ onNavClick }) {
               </span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
-              Ihre Kanzlei für erstklassige Rechtsberatung in München. Seit 2018 an Ihrer Seite.
+              Ihre Kanzlei für erstklassige Rechtsberatung in München. Seit 2013 an Ihrer Seite.
             </p>
             <div className="flex gap-3">
               <a
