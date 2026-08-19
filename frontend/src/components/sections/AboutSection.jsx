@@ -20,7 +20,7 @@ export function AboutSection() {
             <div className="absolute -bottom-6 -right-6 bg-[#d4a446] text-[#0f172a] p-6 rounded-2xl shadow-xl">
               <div className="text-center">
                 <Award className="w-8 h-8 mx-auto mb-2" />
-                <div className="text-3xl font-bold font-serif">6+</div>
+                <div className="text-3xl font-bold font-serif">12+</div>
                 <div className="text-sm font-semibold">Jahre Erfahrung</div>
               </div>
             </div>
