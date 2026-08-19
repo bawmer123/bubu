@@ -98,3 +98,25 @@
 .coin-back {
   transform: translateZ(-5px) rotateY(180deg);
 }
+
+/* Retro 3D-block layered text */
+.text-3d-block {
+  text-shadow:
+    1px 1px 0 rgba(15, 23, 42, 0.55),
+    2px 2px 0 rgba(15, 23, 42, 0.5),
+    3px 3px 0 rgba(15, 23, 42, 0.45),
+    4px 4px 0 rgba(15, 23, 42, 0.4),
+    5px 5px 0 rgba(15, 23, 42, 0.35),
+    6px 6px 0 rgba(15, 23, 42, 0.3),
+    7px 7px 10px rgba(0, 0, 0, 0.45);
+}
+
+.text-3d-block-gold {
+  text-shadow:
+    1px 1px 0 #a9781f,
+    2px 2px 0 #a9781f,
+    3px 3px 0 #8a6118,
+    4px 4px 0 #8a6118,
+    5px 5px 0 #6d4c12,
+    6px 6px 8px rgba(0, 0, 0, 0.5);
+}

@@ -26,10 +26,10 @@ export function HeroSection({ typedText, onNavClick }) {
         </div>
 
         <h1
-          className="text-4xl sm:text-5xl md:text-7xl font-serif font-bold text-white leading-tight mb-6 animate-fadeInUp"
+          className="text-4xl sm:text-5xl md:text-7xl font-serif font-bold text-white leading-tight mb-6 animate-fadeInUp text-3d-block"
           style={{ animationDelay: '0.2s' }}
         >
-          ICMN <span className="text-[#d4a446]">&amp; Partner</span>
+          ICMN <span className="text-[#d4a446] text-3d-block-gold">&amp; Partner</span>
         </h1>
 
         <div className="h-16 sm:h-20 flex items-center justify-center mb-8 animate-fadeInUp" style={{ animationDelay: '0.4s' }}>
