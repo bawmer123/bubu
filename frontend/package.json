@@ -66,6 +66,8 @@
     "dist:win:installer": "npm run build && electron-builder --win nsis --x64"
   },
   "build": {
+    "extends": null,
+    "extraMetadata": { "main": "electron/main.cjs" },
     "appId": "de.icmn.partner",
     "productName": "ICMN & Partner",
     "directories": {
