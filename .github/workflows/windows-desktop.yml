@@ -28,7 +28,8 @@ jobs:
           cmd /c "npm run dist:win > build-log.txt 2>&1"
           Get-Content build-log.txt -Tail 35
           if ($LASTEXITCODE -ne 0) {
-            $errorText = ((Get-Content build-log.txt -Tail 20) -join ' ') -replace '%', '%25' -replace '\r', '%0D' -replace '\n', '%0A'
+            $errorText = ((Get-Content build-log.txt -Tail 50 | Where-Object { $_ -match '(?i)error|failed|cannot|ENOENT|exit code' } | Select-Object -Last 5) -join ' ')
+            $errorText = $errorText.Substring([Math]::Max(0, $errorText.Length - 1800)) -replace '%', '%25'
             Write-Output "::error title=Windows packaging failed::$errorText"
             exit 1
           }
