@@ -142,7 +142,7 @@ export default function ServiceDetail() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-4">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
-            <img src="/icmn-logo.png" alt="ICMN Logo" className="h-10 w-10 object-contain" />
+            <img src={`${process.env.PUBLIC_URL}/icmn-logo.png`} alt="ICMN Logo" className="h-10 w-10 object-contain" />
             <span className="text-2xl font-serif font-bold text-[#0f172a]">
               ICMN <span className="text-[#d4a446]">&amp; Partner</span>
             </span>

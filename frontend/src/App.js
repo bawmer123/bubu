@@ -1,6 +1,6 @@
 import React from 'react';
 import '@/App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import ServiceDetail from './pages/ServiceDetail';
 import Impressum from './pages/Impressum';
@@ -8,10 +8,13 @@ import Datenschutz from './pages/Datenschutz';
 import AGB from './pages/AGB';
 import CookieConsent from './components/CookieConsent';
 
+// file:// cannot serve deep links; keep normal browser URLs for the website.
+const Router = window.location.protocol === 'file:' ? HashRouter : BrowserRouter;
+
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <Router>
         <CookieConsent />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -20,7 +23,7 @@ function App() {
           <Route path="/datenschutz" element={<Datenschutz />} />
           <Route path="/agb" element={<AGB />} />
         </Routes>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 }

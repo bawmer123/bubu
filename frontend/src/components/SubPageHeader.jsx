@@ -8,7 +8,7 @@ export function SubPageHeader() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3" data-testid="header-logo-link">
           <img
-            src="/icmn-logo.png"
+            src={`${process.env.PUBLIC_URL}/icmn-logo.png`}
             alt="ICMN Logo"
             className="h-10 w-10 object-contain"
           />

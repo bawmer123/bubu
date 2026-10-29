@@ -11,7 +11,7 @@ export function FooterSection({ onNavClick }) {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <img src="/icmn-logo.png" alt="ICMN Logo" className="h-10 w-10 object-contain" />
+              <img src={`${process.env.PUBLIC_URL}/icmn-logo.png`} alt="ICMN Logo" className="h-10 w-10 object-contain" />
               <span className="text-xl font-serif font-bold">
                 ICMN <span className="text-[#d4a446]">&amp; Partner</span>
               </span>

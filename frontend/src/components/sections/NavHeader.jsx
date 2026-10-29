@@ -24,10 +24,10 @@ export function NavHeader({ scrolled, mobileMenuOpen, onToggleMobileMenu, onNavC
                   <span key={i} className="coin-edge" style={{ transform: `translateZ(${(i - 4) * 1.15}px)` }} />
                 ))}
                 <div className="coin-face coin-front">
-                  <img src="/icmn-logo.png" alt="ICMN Logo" className="h-8 w-8 object-contain" />
+                  <img src={`${process.env.PUBLIC_URL}/icmn-logo.png`} alt="ICMN Logo" className="h-8 w-8 object-contain" />
                 </div>
                 <div className="coin-face coin-back">
-                  <img src="/icmn-logo.png" alt="ICMN Logo" className="h-8 w-8 object-contain" />
+                  <img src={`${process.env.PUBLIC_URL}/icmn-logo.png`} alt="ICMN Logo" className="h-8 w-8 object-contain" />
                 </div>
               </div>
             </div>

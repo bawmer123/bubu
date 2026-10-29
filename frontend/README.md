@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# ICMN & Partner
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React website with an Electron desktop wrapper for Windows x64. The website and
+desktop application use the same frontend; the unused FastAPI backend is not
+required by the desktop app.
 
-## Available Scripts
+## Build for Windows x64
 
-In the project directory, you can run:
+On a Windows x64 machine, install Node.js 22 and then run in PowerShell:
 
-### `npm start`
+```powershell
+cd frontend
+npm ci --legacy-peer-deps
+npm run dist:win
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The **portable executable** is written to `frontend/release/ICMN-Partner-0.1.0-win-x64.exe`.
+It does not require installation. To create an installer instead, run
+`npm run dist:win:installer` (also outputs to `frontend/release/`). These builds
+are not code-signed; Windows SmartScreen may display a warning. Review the
+publisher and source before running an unsigned executable.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+You can also run the **Windows x64 desktop build** GitHub Actions workflow and
+download its `icmn-partner-windows-x64` artifact. Builds are run on Windows;
+this is the recommended way to obtain a verified Windows executable from CI.
 
-### `npm test`
+## Development
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```sh
+cd frontend
+npm ci --legacy-peer-deps
+npm start            # browser development server
+npm run desktop      # production React build in Electron (requires a desktop session)
+npm run build        # static website build in frontend/build/
+```
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The desktop wrapper loads the static build locally, uses hash routing so
+service and legal pages work under `file://`, and opens external web and email
+links in the default system application. The contact form currently displays a
+confirmation only and does not send messages. The large hero/section photos
+are hosted externally and require internet access; the bundled UI and logo
+work without a network connection.
